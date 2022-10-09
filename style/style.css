@@ -15,6 +15,22 @@ body {
     text-transform: uppercase;
 }
 
+.sectionBtns{
+    padding: 10px 15px;
+    border: 1px solid #000000;
+    font-weight: 300;
+    font-size: 24px;
+    display: inline-block;
+    transition: all .5s;
+    cursor: pointer;
+    margin-top: 30px;
+    font-family: 'Open Sans';
+}
+
+.sectionBtns:hover{
+    box-shadow: 6px 4px 15px 3px #646464
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -28,13 +44,9 @@ ul {
     padding: 33px 0;
 }
 
-.header__img {}
-
 .header-top__nav {
     display: flex;
     justify-content: space-between;
-
-    width: 100%;
 }
 
 .header-top nav {
@@ -47,8 +59,6 @@ ul {
 
     color: #333333;
 }
-
-.header-top__search {}
 
 .header-top__search input {
     text-transform: uppercase;
@@ -66,6 +76,7 @@ ul {
 .banner{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 80px;
 }
 
 .banner__content{
@@ -82,9 +93,121 @@ ul {
 .banner__content-subtitle{
     font-weight: 300;
     color: black;
+    font-family: 'Open Sans';
 }
 
 .conteiner{
     padding-left: 60px;
     padding-right: 60px;
+}
+
+/* Section collection */
+
+.collection__Cards{
+    padding: 80px 0;
+    background: #F1F1F1;
+    margin-bottom: 40px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.collection__Container{
+    text-align: center;
+   
+}
+
+.collectionTitle {
+    font-weight: 500;
+    font-size: 36px;
+    color: #333333;
+}
+
+.collectionSubtitle {
+    font-weight: 500;
+    font-size: 64px;
+    margin-bottom: 40px;
+}
+
+.collection__Cards .cards .card{
+    max-width: 180px;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card .cardsText {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+}
+
+.cardsStars .cardRate{
+    list-style: none;
+    max-width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.cardsPrice {
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.cardsPrice span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.card .cardBtn {
+    padding: 0 10px;
+    background: #A04955;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 130px;
+    margin-top: 15px;
+}
+
+.card .cardBtn img{
+    margin-top: 7px;
+}
+
+/* Section Bestsellings */
+
+
+.wrapContainer{
+    padding: 90px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sellingsContent{
+    max-width: 580px;
+}
+
+.wrapContainer .sellingsContent .sellingsHeader {
+    font-weight: 700;
+    font-size: 65px;
+    color: #001F3D;
+    margin-bottom: 10px;
+}
+
+.wrapContainer .sellingsContent .sellingsText {
+    font-weight: 300;
+    font-size: 24px;
+    color: #000000;
+    font-family: 'Open Sans';
 }
